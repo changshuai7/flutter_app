@@ -9,7 +9,8 @@ class SingleChildScrollView1 extends StatelessWidget {
     String str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     return Scrollbar(
       child: SingleChildScrollView(
-        padding: EdgeInsets.all(16.0),
+        reverse: true ,
+        padding: EdgeInsets.all(20.0),
         child: Center(
           child: Column(
             //动态创建⼀个List<Widget>
@@ -18,7 +19,7 @@ class SingleChildScrollView1 extends StatelessWidget {
                 //每⼀个字⺟都⽤⼀个Text显示,字体为原来的两倍
                 .map((c) => Text(
                       c,
-                      textScaleFactor: 2.0,
+                      textScaleFactor: 3.0,
                     ))
                 .toList(),
           ),
